@@ -10,32 +10,32 @@ Below we'll include some example custom validators
 ^\d{6}$
 ```
 
-## Must contain the letter a at least once
+### Must contain the letter a at least once
 ```regex
 [a]+
 ```
 
-## Must not contain any characters at all (i.e. be blank) - good for a spam trap
+### Must not contain any characters at all (i.e. be blank) - good for a spam trap
 ```regex
 ^$
 ```
 
-## Must not contain characters < > ~ or % anywhere (but must contain something)
+### Must not contain characters < > ~ or % anywhere (but must contain something)
 ```regex
 ^[^<>~%]+$
 ```
 
-## Can be blank or not contain characters < > ~ or % anywhere
+### Can be blank or not contain characters < > ~ or % anywhere
 ```regex
 ^$|^[^<>~%]+$
 ```
 
-## Should start with 0 followed by 9 digits
+### Should start with 0 followed by 9 digits
 ```regex
 ^(0[0-9]{9})?$
 ```
 
-## UK postcode validator
+### UK postcode validator
 ```regex
 (^\s?[A-Z][A-Z]?[0-9]{1,2}[A-Z]?\s?[0-9][A-Z]{2}?$)
 ```
