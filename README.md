@@ -5,11 +5,15 @@ You can create new validators by going to **Pages > Alerts & validators > Valida
 
 Below we'll include some example custom validators
 
-## Must be six digits long
+### Must be six digits long
+```regex
 ^\d{6}$
+```
 
 ## Must contain the letter a at least once
+```regex
 [a]+
+```
 
 ## Must not contain any characters at all (i.e. be blank) - good for a spam trap
 ```regex
