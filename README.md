@@ -5,8 +5,33 @@ You can create new validators by going to **Pages > Alerts & validators > Valida
 
 Below we'll include some example custom validators
 
-## UK postcode validator
+## Must be six digits long
+^\d{6}$
 
+## Must contain the letter a at least once
+[a]+
+
+## Must not contain any characters at all (i.e. be blank) - good for a spam trap
+```regex
+^$
+```
+
+## Must not contain characters < > ~ or % anywhere (but must contain something)
+```regex
+^[^<>~%]+$
+```
+
+## Can be blank or not contain characters < > ~ or % anywhere
+```regex
+^$|^[^<>~%]+$
+```
+
+## Should start with 0 followed by 9 digits
+```regex
+^(0[0-9]{9})?$
+```
+
+## UK postcode validator
 ```regex
 (^\s?[A-Z][A-Z]?[0-9]{1,2}[A-Z]?\s?[0-9][A-Z]{2}?$)
 ```
