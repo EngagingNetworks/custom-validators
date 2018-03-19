@@ -3,11 +3,21 @@ Custom validators are great to add additional validation to your pages. They ale
 
 You can create new validators by going to **Pages > Alerts & validators > Validators**. When you create a new one, choose the Validator Type of "Custom". The custom code uses a language called "regex". You can learn about regex on sites like https://regexone.com and test your regex code before applying it to your pages at sites like https://regex101.com.
 
-Below we'll include some example custom validators
+Below we'll include some example custom validators which you can use to modify your own use
 
 ### Must be six digits long
 ```regex
 ^\d{6}$
+```
+
+### Must be up to 10 digits long
+```regex
+^\d{0,10}$
+```
+
+### Should start with 0 followed by 9 digits
+```regex
+^(0[0-9]{9})?$
 ```
 
 ### Must contain the letter a at least once
@@ -33,11 +43,6 @@ Below we'll include some example custom validators
 ### Can be blank OR not contain characters < > ~ or % anywhere
 ```regex
 ^$|^[^<>~%]+$
-```
-
-### Should start with 0 followed by 9 digits
-```regex
-^(0[0-9]{9})?$
 ```
 
 ### UK postcode validator
