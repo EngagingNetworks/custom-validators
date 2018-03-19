@@ -49,7 +49,7 @@ Below we'll include some example custom validators which you can use to modify y
 ```regex
 (^\s?[A-Z][A-Z]?[0-9]{1,2}[A-Z]?\s?[0-9][A-Z]{2}?$)
 ```
-### Email checker for misspelt domains
+### Email checker for commonly misspelt domains - must not contain @hotmial or @gmial
 ```regex
 ^((?!@hotmial|@gmial).)*$
 ```
