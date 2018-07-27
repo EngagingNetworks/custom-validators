@@ -5,6 +5,11 @@ You can create new validators by going to **Pages > Alerts & validators > Valida
 
 Below we'll include some example custom validators which you can use to modify your own use
 
+### Must be between 1 and 100 characters (any character) long
+```regex
+^.{1,100}$
+```
+
 ### Must be six digits long
 ```regex
 ^\d{6}$
