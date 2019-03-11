@@ -35,6 +35,11 @@ Below we'll include some example custom validators which you can use to modify y
 ^$|^[^<>~%]+$
 ```
 
+### Must only contain letters - nothing else (not even spaces) ###
+```regex
+^[a-zA-Z]*$
+```
+
 ## Address validators
 ### Address field - Can be blank OR contain letters, numbers, commas, spaces, dots, slashes, dashes, apostophes
 ```regex
